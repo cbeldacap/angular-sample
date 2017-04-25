@@ -1,0 +1,17 @@
+<md-card class="example-card" style="width:50%; margin:auto 25% 0 25%">
+  <md-card-header>
+    <img md-card-avatar src="https://raw.githubusercontent.com/hashdog/node-identicon-github/master/examples/images/github.png">
+    <md-card-title>Body Component</md-card-title>
+    <md-card-subtitle>Dog Breed</md-card-subtitle>
+  </md-card-header>
+  <md-card-content>
+    <h1>{{counter}}</h1>
+    <md-input-container style="width: 100%">
+      <input mdInput [(ngModel)]="counter">
+    </md-input-container>
+  </md-card-content>
+  <md-card-actions>
+    <button md-raised-button color="primary" (click)="up()">+</button>
+    <button md-raised-button color="accent" (click)="down()">-</button>
+  </md-card-actions>
+</md-card>
